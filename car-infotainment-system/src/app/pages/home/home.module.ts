@@ -6,6 +6,9 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { MapComponent } from './components/map/map.component';
+import { PhoneComponent } from './components/phone/phone.component';
+import { MusicCompComponent } from './components/music-comp/music-comp.component';
 
 
 @NgModule({
@@ -15,7 +18,7 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, TopbarComponent],
+  declarations: [HomePage, TopbarComponent, MapComponent, PhoneComponent, MusicCompComponent],
   exports: [TopbarComponent]
 })
 export class HomePageModule {}
