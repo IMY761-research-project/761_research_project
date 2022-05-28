@@ -10,7 +10,6 @@ import { MapComponent } from './components/map/map.component';
 import { PhoneComponent } from './components/phone/phone.component';
 import { MusicCompComponent } from './components/music-comp/music-comp.component';
 
-
 @NgModule({
   imports: [
     CommonModule,
