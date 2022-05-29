@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-phone',
@@ -8,9 +9,12 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class PhoneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  routeToPhoneHome(){
+    this.router.navigateByUrl('/phone');
+  }
 }
