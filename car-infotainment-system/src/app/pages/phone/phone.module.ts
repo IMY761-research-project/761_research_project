@@ -8,6 +8,9 @@ import { PhonePageRoutingModule } from './phone-routing.module';
 
 import { PhonePage } from './phone.page';
 import { HomePageModule } from '../home/home.module';
+import { CallingInformComponent } from './components/calling-inform/calling-inform.component';
+import { PhoneAnswerComponent } from './components/phone-answer/phone-answer.component';
+import { PhoneHangUpComponent } from './components/phone-hang-up/phone-hang-up.component';
 
 @NgModule({
   imports: [
@@ -17,6 +20,6 @@ import { HomePageModule } from '../home/home.module';
     PhonePageRoutingModule,
     HomePageModule
   ],
-  declarations: [PhonePage]
+  declarations: [PhonePage, CallingInformComponent, PhoneAnswerComponent, PhoneHangUpComponent]
 })
 export class PhonePageModule {}

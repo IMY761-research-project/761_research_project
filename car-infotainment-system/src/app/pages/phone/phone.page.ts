@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhonePage implements OnInit {
 
-  constructor() { }
+  receivingCall: boolean;
+  makingCall:boolean;
+  constructor() {
+    this.receivingCall = false;
+    this.makingCall = true;
+  }
 
   ngOnInit() {
+    
+  }
+
+  toggleSendReceive(){
+    this.receivingCall = !this.receivingCall;
+    this.makingCall = !this.receivingCall;
   }
 
 }

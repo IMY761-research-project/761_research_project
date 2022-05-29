@@ -12,3 +12,33 @@
     border-radius: 25px;
     margin: 25px;
   }
+
+  .oneHalf{
+    height:462px;
+    background-color: rgba(201, 200, 200, 0.8);
+    border-radius: 25px;
+    margin: 25px;
+    width: 100%;
+  }
+
+  .oneHalfSplitLeft{
+    height:462px;
+    width:370px;
+    background-color: rgba(201, 200, 200, 0.8);
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left:25px;
+    margin-right:5px;
+  }
+
+  .oneHalfSplitRight{
+    height:462px;
+    width:370px;
+    background-color: rgba(201, 200, 200, 0.8);
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left:5px;
+    margin-right:25px;
+  }

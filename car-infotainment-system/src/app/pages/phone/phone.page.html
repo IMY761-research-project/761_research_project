@@ -3,5 +3,27 @@
     <app-topbar></app-topbar>
   </ion-header>
 
+  <ion-grid>
+    <ion-row>
+
+      <div class="oneHalf">
+        <app-calling-inform name="Matthew"></app-calling-inform>
+      </div>
+
+    </ion-row>
+
+    <ion-row>
+
+        <!-- will use toggle to determine what components must be shown at init -->
+
+        <app-phone-hang-up *ngIf="receivingCall" (click)="toggleSendReceive()"></app-phone-hang-up>
+        <app-phone-answer *ngIf="receivingCall" (click)="toggleSendReceive()"></app-phone-answer>
+
+        <div class="oneHalf" (click)="toggleSendReceive()">
+          <ion-icon name="Call" id="initCall"></ion-icon>
+        </div>
+    </ion-row>
+  </ion-grid>
+  
   
 </ion-content>
