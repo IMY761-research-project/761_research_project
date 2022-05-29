@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PhonePageRoutingModule } from './phone-routing.module';
 
 import { PhonePage } from './phone.page';
+import { HomePageModule } from '../home/home.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PhonePageRoutingModule
+    PhonePageRoutingModule,
+    HomePageModule
   ],
   declarations: [PhonePage]
 })
