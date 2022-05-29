@@ -9,7 +9,7 @@
       <div class="oneHalf">
         <app-calling-inform name="Matthew"></app-calling-inform>
       </div>
-
+      <!-- <app-sliding-contact-select></app-sliding-contact-select> -->
     </ion-row>
 
     <ion-row>
@@ -19,7 +19,7 @@
         <app-phone-hang-up *ngIf="receivingCall" (click)="toggleSendReceive()"></app-phone-hang-up>
         <app-phone-answer *ngIf="receivingCall" (click)="toggleSendReceive()"></app-phone-answer>
 
-        <div class="oneHalf" (click)="toggleSendReceive()">
+        <div *ngIf="!receivingCall" class="oneHalf" (click)="toggleSendReceive()">
           <ion-icon name="Call" id="initCall"></ion-icon>
         </div>
     </ion-row>

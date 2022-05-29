@@ -1,5 +1,6 @@
 @import "../../app.component.scss";
-
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
 #initCall{
     position: relative;
     top: 50%;
