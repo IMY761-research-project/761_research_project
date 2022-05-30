@@ -1,4 +1,4 @@
-import { MapsMainHomeComponent } from './components/maps-main-home/maps-main-home.component';
+import { MapsListeningScreenComponent } from './components/maps-listening-screen/maps-listening-screen.component';
 import { MapsPageModule } from './maps.module';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,6 +10,10 @@ const routes: Routes = [
     path: '',
     component:MapsPage,
   },
+  {
+    path:'voiceActivation',
+    component: MapsListeningScreenComponent
+  }
 ];
 
 @NgModule({
