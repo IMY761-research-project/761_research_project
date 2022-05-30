@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-phone',
   templateUrl: './phone.component.html',
-  styleUrls: ['./phone.component.css'],
+  styleUrls: ['./phone.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PhoneComponent implements OnInit {

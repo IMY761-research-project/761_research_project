@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-music-comp',
   templateUrl: './music-comp.component.html',
-  styleUrls: ['./music-comp.component.css'],
+  styleUrls: ['./music-comp.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MusicCompComponent implements OnInit {
