@@ -1,1 +1,17 @@
-<p>maps-listening-accepted works!</p>
+<ion-content [fullscreen]="true">
+    <ion-header>
+      <app-topbar></app-topbar>
+    </ion-header>
+    <ion-grid>
+        <ion-row>
+           <div class="full">
+                <div>
+                    <h1 id="politeText">Accepted, please confirm</h1><br>
+                    <h1 id="address">{{address}}</h1>
+                </div>
+                <ion-icon id="rejectLogo" name="close-circle-outline" (click)="rejectAddress()"></ion-icon>
+                <ion-icon id="acceptLogo" name="checkmark-circle-outline" (click)="acceptAddress()"></ion-icon>
+           </div>
+        </ion-row>
+    </ion-grid>
+</ion-content>

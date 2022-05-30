@@ -4,6 +4,8 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MapsPage } from './maps.page';
+import { MapsListeningAcceptedComponent } from './components/maps-listening-accepted/maps-listening-accepted.component';
+import { DisplayMapScreenComponent } from './components/display-map-screen/display-map-screen.component';
 
 const routes: Routes = [
   {
@@ -13,6 +15,14 @@ const routes: Routes = [
   {
     path:'voiceActivation',
     component: MapsListeningScreenComponent
+  },
+  {
+    path:'mapsListeningAccept',
+    component: MapsListeningAcceptedComponent
+  },
+  {
+    path:'mapsDisplay',
+    component: DisplayMapScreenComponent
   }
 ];
 
